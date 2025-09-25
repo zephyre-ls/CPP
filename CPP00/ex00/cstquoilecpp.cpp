@@ -4,4 +4,5 @@ CPP = OOP (OBJECTION-ORIENTED)
 Man du CPP = pas de man direct comme le C 
 https://gcc.gnu.org/onlinedocs/libstdc++/
 Syntaxe du CPP:
-
+https://daillya.github.io/cpp.html
+https://en.cppreference.com/w/cpp.html
