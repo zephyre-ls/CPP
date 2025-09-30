@@ -6,7 +6,7 @@
 /*   By: lduflot <lduflot@student.42perpignan.fr>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/17 18:39:27 by lduflot           #+#    #+#             */
-/*   Updated: 2025/09/30 11:56:10 by lduflot          ###   ########.fr       */
+/*   Updated: 2025/09/30 12:04:57 by lduflot          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,9 +25,7 @@ int	main(int argc, char **argv)
 		while(argv[i][j])
 		{
 			if (std::islower(argv[i][j]))
-			{
 				std::cout << (char)(argv[i][j] - 32); //cast en char
-			}
 			else
 				std::cout << argv[i][j];
 			j++;

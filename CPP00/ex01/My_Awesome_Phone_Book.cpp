@@ -6,7 +6,7 @@
 /*   By: lduflot <lduflot@student.42perpignan.fr>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/30 10:09:13 by lduflot           #+#    #+#             */
-/*   Updated: 2025/09/30 11:28:02 by lduflot          ###   ########.fr       */
+/*   Updated: 2025/09/30 12:58:14 by lduflot          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -77,13 +77,17 @@ void	exit_phone_book(void)
 
 int	main(int argc, char **argv)
 {
-	Contact	instance_contact;
 	PhoneBook	instance_phonebook;
 
 	std::string command;
 	std::cout << "Welcome in awesome phonebook" << std::endl;
 	std::cout << "Your Phone Book is empty." << std::endl;
 	std::cout << "You can use this command: ADD, SEARCH, EXIT" << std::endl;
+	std::cout << "ADD: Create new contact" << std::endl;
+	std::cout << "SEARCH: Search contact by index" << std::endl;
+	std::cout << "EXIT: Quit programm and delete your awesome phonebook" << std::endl;
+	std::cout << std::endl;
+
 	
 	while(1)
 	{
@@ -91,7 +95,7 @@ int	main(int argc, char **argv)
 
 		if (command == "ADD")
 		{
-			instance_contact.add_contact();
+			instance_phonebook.add_contacts();
 			continue;
 		}
 		else if (command  == "SEARCH")
@@ -106,7 +110,10 @@ int	main(int argc, char **argv)
 			exit(1);
 		}
 		else
+		{
+			std::cout << "Enter: ADD, SEARCH or EXIT" << std::endl;
 			continue;
+		}
 	}
 	return(0);
 }

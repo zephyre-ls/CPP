@@ -6,7 +6,7 @@
 /*   By: lduflot <lduflot@student.42perpignan.fr>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/30 10:52:05 by lduflot           #+#    #+#             */
-/*   Updated: 2025/09/30 11:41:14 by lduflot          ###   ########.fr       */
+/*   Updated: 2025/09/30 14:06:46 by lduflot          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,7 @@ class Contact {
 	~Contact( void ); //destructeur
 	
 	void	add_contact(void); //fonction membre
+	void	display_contact(void);
 };
 
 #endif
