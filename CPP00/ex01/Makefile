@@ -1,7 +1,7 @@
 CC = c++
 CFLAGS = -Wall -Wextra -Werror -std=c++98
-NAME = megaphone
-FILES = megaphone.cpp
+NAME = PhoneBook
+FILES = My_Awesome_Phone_Book.cpp
 
 OBJS = $(FILES:.cpp=.o)
 
