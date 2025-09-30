@@ -1,35 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   PhoneBook_class.hpp                                :+:      :+:    :+:   */
+/*   Contact.hpp                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lduflot <lduflot@student.42perpignan.fr>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/09/30 10:53:16 by lduflot           #+#    #+#             */
-/*   Updated: 2025/09/30 14:07:39 by lduflot          ###   ########.fr       */
+/*   Created: 2025/09/30 10:52:05 by lduflot           #+#    #+#             */
+/*   Updated: 2025/09/30 15:39:29 by lduflot          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef PHONEBOOK_CLASS_HPP
-# define PHONEBOOK_CLASS_HPP
-#include "Contact_class.hpp"
+#ifndef CONTACT_HPP
+# define CONTACT_HPP
+#include <iostream>
 
-class PhoneBook {
-	private:
-	Contact contacts[8];
-	int	i;
-	int	total_contacts;
-
-	public:
-	int	index;
-
-	PhoneBook(void); //constructeur
-	~PhoneBook(void); //destructeur
-
-	void	add_contacts(void);
-	void	search_contact(void);
-	void	display_repertory(void);
-	std::string resize_display(std::string info);
+class Contact {
+	public :
+	
+		std::string first_name;
+		std::string last_name;
+		std::string nickname;
+		std::string phone_number;
+		std::string darkest;
+	
+	Contact( void ); //constructeur
+	~Contact( void ); //destructeur
+	
+	int	add_contact(void); //fonction membre
+	void	display_contact(void);
 };
 
 #endif
