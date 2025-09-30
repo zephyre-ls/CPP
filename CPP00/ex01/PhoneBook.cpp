@@ -6,7 +6,7 @@
 /*   By: lduflot <lduflot@student.42perpignan.fr>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/30 10:55:26 by lduflot           #+#    #+#             */
-/*   Updated: 2025/09/30 17:01:51 by lduflot          ###   ########.fr       */
+/*   Updated: 2025/09/30 17:50:46 by lduflot          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,6 @@
 #include "Contact.hpp"
 #include <cctype>
 #include <iomanip>
-
 
 /*
  * Fonctions membres d'une obet:
@@ -69,6 +68,7 @@ void	PhoneBook::display_repertory(void)
 	std::cout << "--------------------------------------------------" << std::endl;
 	std::cout << "\033[1m" << "           Your awesome phonebook" << "\033[0m" << std::endl;
 	std::cout << "--------------------------------------------------" << std::endl;
+	std::cout << std::endl;
 	std::cout << "\033[1m" 
 	<<  std::setw(10) << std::left  <<  "Index"
 	<< "|" << std::setw(10) << std::left << "FirstName"
@@ -89,7 +89,7 @@ void	PhoneBook::display_repertory(void)
 		<< std::endl;
 		i++;
 	}
-	std::cout << std::endl;	
+	std::cout << std::endl;
 	return ;
 }
 

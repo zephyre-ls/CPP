@@ -6,7 +6,7 @@
 /*   By: lduflot <lduflot@student.42perpignan.fr>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/30 10:09:13 by lduflot           #+#    #+#             */
-/*   Updated: 2025/09/30 16:54:10 by lduflot          ###   ########.fr       */
+/*   Updated: 2025/09/30 17:49:03 by lduflot          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 #include<iostream>
 
 /*
- * Name_Space = 
+ * Name_Space = ?
 	Sortie standard: cout << (redirige flux dans sortie standard)
 	Entre standart: cin >>
 	<< ou >> 
@@ -40,7 +40,8 @@ int	main(int argc, char **argv)
 	{
 		std::cout << "\033[1mEnter command: \033[0m";
 		std::cin >> command;
-			std::cin.ignore(); //sans ce sin.ignore automatiquement garde dans le buffer le /n et saute first_name
+		
+		std::cin.ignore(); //sans ce sin.ignore automatiquement garde dans le buffer le /n et saute first_name
 		if (command == "ADD")
 		{
 			instance_phonebook.add_contacts();

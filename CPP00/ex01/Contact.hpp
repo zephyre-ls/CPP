@@ -6,7 +6,7 @@
 /*   By: lduflot <lduflot@student.42perpignan.fr>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/30 10:52:05 by lduflot           #+#    #+#             */
-/*   Updated: 2025/09/30 15:39:29 by lduflot          ###   ########.fr       */
+/*   Updated: 2025/09/30 17:43:28 by lduflot          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,11 +23,13 @@ class Contact {
 		std::string phone_number;
 		std::string darkest;
 	
-	Contact( void ); //constructeur
-	~Contact( void ); //destructeur
+	Contact(void); //constructeur
+	~Contact(void); //destructeur
 	
-	int	add_contact(void); //fonction membre
+	int		add_contact(void); //fonction membre
 	void	display_contact(void);
+	int		check_error(int error);
+	void	clear_contacts(void);
 };
 
 #endif
