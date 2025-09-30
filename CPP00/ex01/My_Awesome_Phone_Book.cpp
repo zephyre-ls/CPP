@@ -6,11 +6,12 @@
 /*   By: lduflot <lduflot@student.42perpignan.fr>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/30 10:09:13 by lduflot           #+#    #+#             */
-/*   Updated: 2025/09/30 11:05:29 by lduflot          ###   ########.fr       */
+/*   Updated: 2025/09/30 11:28:02 by lduflot          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-
+#include "PhoneBook_class.hpp"
+#include "Contact_class.hpp"
 #include<iostream>
 /*
  * Name_Space = 
@@ -29,9 +30,9 @@
 	<< ou >> 
 */
 
-void	add_contact(void)
-{
-	std::string	contact;
+//void	add_contact(void)
+//{
+//	std::string	contact;
 /*
  Tableau de contact: max 8;
  Si un 9eme est rentre il remplace le premier
@@ -51,7 +52,7 @@ void	add_contact(void)
  * 5 darkest secret
  * ! AUCUN CHAMPS NE PEUT ETRE VIDDE 
  */
-}
+//}
 
 void	search_contact(void)
 {
@@ -77,9 +78,11 @@ void	exit_phone_book(void)
 int	main(int argc, char **argv)
 {
 	Contact	instance_contact;
+	PhoneBook	instance_phonebook;
 
 	std::string command;
 	std::cout << "Welcome in awesome phonebook" << std::endl;
+	std::cout << "Your Phone Book is empty." << std::endl;
 	std::cout << "You can use this command: ADD, SEARCH, EXIT" << std::endl;
 	
 	while(1)
@@ -93,17 +96,17 @@ int	main(int argc, char **argv)
 		}
 		else if (command  == "SEARCH")
 		{
+			instance_phonebook.search_contact();
 			continue;
 
 		}
 		else if (command == "EXIT")
 		{
+			std::cout << "Your PhoneBook is delete." << std::endl;
 			exit(1);
 		}
 		else
-		{
 			continue;
-		}
 	}
 	return(0);
 }
